@@ -1,10 +1,51 @@
 .App {
   text-align: center;
+  background-color:hsl(206, 32%, 91%);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.button {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  min-width: 110px;
+}
+.play_button {
+  width: 20px;
+  text-align: center;
+}
+.text {
+  width: 200px;
+  text-align: left;
+}
+button {
+  border: 8px solid hsl(206, 30%, 91%);
+  height: 50px;
+  width: 50px;
+  background-color: hsl(206, 32%, 91%);
+  border-radius: 50%;
+  border: none;
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70, 70, 70,0.12);
+  outline: none;
+}
+button:active {
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 10px 10px 15px rgba(70, 70, 70,0.12),inset -10px -10px 15px rgba(255,255,255,0.5), inset 10px 10px 15px rgba(70, 70, 70,0.12);
+}
+h1, h2, h3 {
+  font-family: Montserrat;
+}
+h3 {
+  color: #ACA5A5;
+  text-align: left;
+}
+.song {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid  #8C9EB3;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,14 +55,24 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.App-title {
+  color: #000000;
+  text-shadow: 0px 4px 6px #000000;
+}
+.song_list {
+  height: 20px;
+  border-top: 2px solid #8C9EB3;
+  border-radius: 50px;
 }
 
 .App-link {
